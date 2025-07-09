@@ -1,4 +1,3 @@
--- Active: 1750671264799@@127.0.0.1@3306@seneca
 
 create database seneca
 character set latin1
