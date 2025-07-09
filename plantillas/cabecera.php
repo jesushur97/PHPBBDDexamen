@@ -31,6 +31,8 @@ require_once($rutaPHP."config.php");
                 <li><a href="<?=$ruta?>registro.php">Insertar Alumnos</a></li>
                 <li><a href="<?=$ruta?>asignaturas/listado.php">Mostrar asignaturas</a></li>
                 <li><a href="<?=$ruta?>asignaturas/registro.php">Insertar Asignatura</a></li>
+                <li><a href="<?=$ruta?>vehiculos/registro.php">Insertar Vehículo</a></li>
+                <li><a href="<?=$ruta?>vehiculos/listado.php">Mostrar listado de Vehículos</a></li>
             </ul>
         </nav>
     </aside>
