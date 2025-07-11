@@ -30,6 +30,16 @@ require_once('plantillas/cabecera.php');
             <label for="email" class="col-sm-2 col-form-label">Correo electrónico:</label>
             <input type="email" name="email" id="email" class="form-control">
         </div>
+
+      <!-- Nuevo campo para DNI-->
+       <div class="control mb-3">
+        <label for="dni" class="col-sm-2 col-form-label" >DNI:</label>
+        <input type="text" name="dni" id="dni" class="form-control" maxlength="9" pattern="[0-9]{8}[A-Za-z]{1}" title="Formato válido: 8 cifras seguidas de una letra">
+        
+
+       </div>
+      
+
         <div class="control mb-3">
             <input type="submit" value="Añadir Alumno"  class="btn btn-primary">
         </div>

@@ -12,11 +12,12 @@
     $apellido2 = $_POST['apellido2'];
     $fechaNac = $_POST['fecha_nac'];
     $email = $_POST['email'];
+    $dni = $_POST['DNI'];
 
-    $consulta = "UPDATE alumnos SET nombre=?, apellido1=?, apellido2=?, fecha_nac=?, email=? where id =?";
+    $consulta = "UPDATE alumnos SET nombre=?, apellido1=?, apellido2=?, fecha_nac=?, email=?, dni=? where id =?";
     // Utilizamos una consulta preparada
     $preparada = mysqli_prepare($conexion, $consulta);
-    mysqli_stmt_bind_param($preparada, 'sssssi', $nombre,$apellido1, $apellido2, $fechaNac, $email, $id);
+    mysqli_stmt_bind_param($preparada, 'sssssis', $nombre,$apellido1, $apellido2, $fechaNac, $email, $id,$dni);
 
     // ejecutamos la consulta prparada
     mysqli_stmt_execute($preparada);
